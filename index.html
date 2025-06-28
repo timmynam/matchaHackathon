@@ -10,14 +10,18 @@
 </head>
 
 <body>
+    <!-- Startup Page -->
     <div class = "heroSection" id="homepage">
         <img src="resources/images/BACKGROUND.png" alt="homepage">
         <h1> WHAT MATCHA <br> ARE YOU? </h1>
+        <img class ="miffyContainer" src="resources/images/miffyMatcha.png" alt="miffy hodling matcha">
         <button class="start-button" onclick="startQuiz()">START QUIZ</button>
     </div>
 
     <!-- Quiz Container -->
+<div class ="questionSection">
     <div class="quiz-container" id="quizContainer">
+        <img src="resources/images/BACKGROUND.png" alt="quiz background">
         <div class="quiz-content">
             <div class="progress-section">
                 <div class="progress-bar">
@@ -32,6 +36,16 @@
             </div>
         </div>
     </div>
+</div>
+<!-- Result Page -->
+    <div class="results-container" id="resultsContainer">
+        <div class="results-content">
+            <div class="result-card">
+                <button class="restart-button" onclick="restartQuiz()">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
