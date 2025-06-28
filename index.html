@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WHAT MATCHA ARE YOU?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
 
+<body>
+    <div class = "heroSection" id="homepage">
+        <img src="resources/images/BACKGROUND.png" alt="homepage">
+        <h1> WHAT MATCHA <br> ARE YOU? </h1>
+        <button class="start-button" onclick="startQuiz()">START QUIZ</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container" id="quizContainer">
+        <div class="quiz-content">
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="question-counter" id="questionCounter">Question 1 of 10</div>
+            </div>
+
+            <div class="question-card">
+                <h2 class="question-title" id="questionTitle"></h2>
+                <div class="answer-options" id="answerOptions"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
