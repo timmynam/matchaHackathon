@@ -99,6 +99,7 @@ const matchaTypes = {
         subtitle: "The Kawaii Dreamer",
         icon: "🌸",
         description: "You're the embodiment of cuteness and romance! You see the world through rose-colored glasses and turn everyday moments into Pinterest-worthy memories. Your aesthetic is soft pastels, cozy cafes, and anything that makes life feel like a fairytale. You believe in romanticizing the little things and finding beauty in every moment.",
+        image: "resources/images/strawberrymatcha.jpg",
         traits: ["Kawaii", "Coquette", "Romantic", "Aesthetic", "Spring Vibes", "Pinterest Life"]
     },
     earl: {
@@ -106,6 +107,7 @@ const matchaTypes = {
         subtitle: "The Zen Wellness Guru",
         icon: "🧘",
         description: "You're all about that self-care lifestyle! Poetry, journaling, yoga sessions, and quiet moments with a good book define your perfect day. You prioritize mental health, have a morning routine that others envy, and know that true luxury is inner peace. Your vibe is calm, collected, and deeply nurturing.",
+        image: "resources/images/earlgrey.jpg",
         traits: ["Self-Care", "Mindful", "Poetic", "Healthy", "Calm", "Winter Soul"]
     },
     banana: {
@@ -113,6 +115,7 @@ const matchaTypes = {
         subtitle: "The Cozy Goofball",
         icon: "🐒",
         description: "You're the human version of a warm hug! Nostalgic, playful, and endlessly optimistic, you bring childlike wonder to everything you do. Studio Ghibli movies make you cry happy tears, and you believe love languages are real. You might seem quiet at first, but your humor shines once people get to know you.",
+        image: "resources/images/bananamatcha.jpg",
         traits: ["Nostalgic", "Cozy", "Funny", "Warm Hug", "Ghibli Vibes", "Summer Child"]
     },
     classic: {
@@ -120,6 +123,7 @@ const matchaTypes = {
         subtitle: "The Structured Achiever",
         icon: "⏰",
         description: "You're the person everyone wishes they could be! Punctual, disciplined, and incredibly organized, you've mastered the art of routine. Your planner is your best friend, and you genuinely enjoy the satisfaction of checking things off your to-do list. Structure isn't limiting for you—it's liberating.",
+        image: "resources/images/classicmatcha.jpg",
         traits: ["Punctual", "Disciplined", "Organized", "Routine", "Structured", "Goal-Oriented"]
     }
 };
@@ -177,7 +181,7 @@ function selectAnswer(type, selectedOption) {
         } else {
             showResults();
         }
-    }, 600);
+    }, 50);
 }
 
 // Show quiz results
@@ -191,6 +195,10 @@ function showResults() {
 
     document.getElementById('quizContainer').style.display = 'none';
     document.getElementById('resultsContainer').style.display = 'block';
+
+    const resultImageElement = document.getElementById('resultImage');
+    resultImageElement.src = result.image;
+    resultImageElement.alt = result.name;
 
     document.getElementById('resultIcon').textContent = result.icon;
     document.getElementById('resultTitle').textContent = result.name;
