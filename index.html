@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WHAT MATCHA ARE YOU?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Startup Page -->
+    <div class = "heroSection" id="homepage">
+        <img src="resources/images/BACKGROUND.png" alt="homepage">
+        <h1> WHAT MATCHA <br> ARE YOU? </h1>
+        <img class ="miffyContainer" src="resources/images/miffyMatcha.png" alt="miffy hodling matcha">
+        <button class="start-button" onclick="startQuiz()">START QUIZ</button>
+    </div>
+
+    <!-- Quiz Container -->
+<div class ="questionSection">
+    <div class="quiz-container" id="quizContainer">
+        <img src="resources/images/BACKGROUND.png" alt="quiz background">
+        <div class="quiz-content">
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="question-counter" id="questionCounter">Question 1 of 10</div>
+            </div>
+
+            <div class="question-card">
+                <h2 class="question-title" id="questionTitle"></h2>
+                <div class="answer-options" id="answerOptions"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Results -->
+
+    <div class="results-container" id="resultsContainer">
+        <div class="results-content">
+            <div class="result-card">
+                <img id="resultImage" class="result-image" src="" alt="Your Matcha Result">
+                <button class="restart-button" onclick="restartQuiz()">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
