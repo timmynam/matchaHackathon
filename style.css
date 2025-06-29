@@ -218,6 +218,16 @@ body {
     border: 1px solid #d4edda;
 }
 
+.result-image {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto 2rem;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: block;
+}
+
 .restart-button {
     background: linear-gradient(135deg, #7cb87c, #5a9a5a);
     color: white;
@@ -233,7 +243,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-//
 
 .restart-button:hover {
     transform: translateY(-2px);
